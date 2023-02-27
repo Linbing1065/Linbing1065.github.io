@@ -54,7 +54,7 @@ grunt.initConfig({
 			'-W044': true,
 			'-W104': true,
 		},
-		files: ['src/*.js']
+		files: ['*.js']
 	},
 	concat: {
 		options: {
@@ -62,24 +62,24 @@ grunt.initConfig({
 		},
 		dist: {
 			files: {
-				'dist/leaflet-search.src.js': ['src/leaflet-search.js'],			
-				'dist/leaflet-search.src.css': ['src/leaflet-search.css'],
-				'dist/leaflet-search.mobile.src.css': ['src/leaflet-search.mobile.css']
+				'leaflet-search.src.js': ['leaflet-search.js'],			
+				'leaflet-search.src.css': ['leaflet-search.css'],
+				'leaflet-search.mobile.src.css': ['leaflet-search.mobile.css']
 			}
 		}
 	},
 	uglify: {
 		dist: {
 			files: {
-				'dist/leaflet-search.min.js': ['dist/leaflet-search.src.js']
+				'leaflet-search.min.js': ['leaflet-search.src.js']
 			}
 		}
 	},
 	cssmin: {
 		combine: {
 			files: {
-				'dist/leaflet-search.min.css': ['src/leaflet-search.css'],
-				'dist/leaflet-search.mobile.min.css': ['src/leaflet-search.mobile.css']
+				'leaflet-search.min.css': ['leaflet-search.css'],
+				'leaflet-search.mobile.min.css': ['leaflet-search.mobile.css']
 			}
 		},
 		options: {
@@ -87,10 +87,9 @@ grunt.initConfig({
 		},
 		minify: {
 			expand: true,
-			cwd: 'dist/',
 			files: {
-				'dist/leaflet-search.min.css': ['src/leaflet-search.css'],
-				'dist/leaflet-search.mobile.min.css': ['src/leaflet-search.mobile.css']
+				'leaflet-search.min.css': ['leaflet-search.css'],
+				'leaflet-search.mobile.min.css': ['leaflet-search.mobile.css']
 			}
 		}
 	},
