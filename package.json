@@ -12,8 +12,8 @@
     "email": "stefano.cudini@gmail.com",
     "url": "https://opengeo.tech/"
   },
-  "main": "dist/leaflet-search.src.js",
-  "style": "dist/leaflet-search.src.css",
+  "main": "leaflet-search.src.js",
+  "style": "leaflet-search.src.css",
   "license": "MIT",
   "keywords": [
     "gis",
